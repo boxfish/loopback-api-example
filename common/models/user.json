@@ -14,10 +14,10 @@
       "type": "string",
       "required": true
     },
-    "isAdmin": {
-      "type": "boolean",
+    "role": {
+      "type": "string",
       "required": "true",
-      "default": false
+      "default": "user"
     }
   },
   "validations": [],

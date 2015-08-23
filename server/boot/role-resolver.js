@@ -18,8 +18,8 @@ module.exports = function(app) {
     User.findById(userId, function(err, user) {
       if (err || !user)
         return reject();
-      // if isAdmin flag is true
-      cb(null, user.isAdmin);
+      // if role is set to admin
+      cb(null, user.role === "admin");
     });
   });
 }
